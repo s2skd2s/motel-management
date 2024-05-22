@@ -21,6 +21,7 @@
     color: white;
     padding: 0 12px;
     font-size: 13.3px;
+    font-weight: bold;
 }
 
 .navbar_link:hover{
