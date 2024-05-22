@@ -1,0 +1,58 @@
+.header_container{
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+
+.left_header{
+    display: flex;
+
+    flex: 1;
+}
+
+
+.header_logo{
+    background-image: url(../../../public/images/layout/header/motel-manager-logo.png);
+    background-size: cover;  
+    background-position: center; 
+    display: block;
+    height: 70px;
+    width: 240px;
+    margin-left: 84px;
+}
+
+.right_header{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 84px;
+}
+
+.header_btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10px;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.header_btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}

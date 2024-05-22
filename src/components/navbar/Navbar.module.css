@@ -1,0 +1,29 @@
+.navbar_container{
+    height: auto;
+    min-height: 40px;
+    width: 100%;
+
+    background-color: blue;
+    
+    display: flex;
+    padding: 0 84px;
+
+    position: sticky;
+    top: 0;
+}
+
+
+.navbar_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 0 12px;
+    font-size: 13.3px;
+}
+
+.navbar_link:hover{
+    background-color: red;
+}
+
