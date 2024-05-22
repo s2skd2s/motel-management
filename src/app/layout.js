@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Navbar from "@/components/navbar/Navbar";
 import ContactSection from "@/components/section/ContactSection";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <Navbar></Navbar>
         {children}
         <ContactSection></ContactSection>
+        <Footer></Footer>
       </body>
     </html>
   );
