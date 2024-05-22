@@ -1,0 +1,49 @@
+.ContactSection{
+    height: 400px;
+    width: 100% - 184px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 84px 20px 84px;
+    border: 7px dashed #e8eefc;
+    background-color: white;
+    padding: 30px;
+}
+
+.contact_background{
+    width: 100%;
+    height: 150px;
+    background-image: url("../../../public/images/layout/section/support-bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;   
+    background-position: center;
+}
+
+.contact_title{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contact_info_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_name{
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact_phone_number, .contact_email{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
