@@ -9,7 +9,7 @@ export default function Navbar(){
             <a className={styles.navbar_link}  href="">Cho thuê căn hộ</a>
             <a className={styles.navbar_link}  href="">Mặt bằng, văn phòng</a>
             <a className={styles.navbar_link}  href="">Tìm người ở ghép</a>
-            <a className={styles.navbar_link}  href="">Tin tức</a>
+            <a className={styles.navbar_link}  href="/News">Tin tức</a>
             <a className={styles.navbar_link}  href="">Bảng giá dịch vụ</a>
         </div>
     )
