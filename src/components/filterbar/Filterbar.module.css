@@ -1,0 +1,121 @@
+.filter_container{
+    display: flex;
+    background-color: rgb(254, 187, 2);
+    justify-content: center;
+    margin: 10px 84px;
+    border-radius: 10px;
+}
+
+.filter_category{
+    margin: 10px;
+    background-color: white;
+    padding: 10px 30px 10px 10px;
+    font-size: 13.3px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+}
+
+.filter_submit_btn{
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #0071c2;
+    padding: 10px 30px 10px 22px;
+    font-size: 13.3px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+}
+
+.filter_content{
+  
+}
+
+.filter_price_popup.closed{
+    display: none;
+}
+
+.filter_price_popup{
+    display: block;
+}
+
+.black_overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup_container{
+    background-color: white;
+    height: 500px;
+    width: 700px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.popup_header{
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    line-height: 45px;
+    box-sizing: border-box;
+    border-bottom: 0.8px solid rgb(221, 221, 221);
+}
+
+.popup_close_btn{
+    width: 45px;
+    height: 45px;
+    background-image: url('../../../public/images/icons/X-close-icon.png');
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    top:0;
+    left: 0;
+    cursor: pointer;
+}
+
+.popup_content{
+    padding: 10px;
+    height: 410px;
+}
+
+.filter_value{
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px;
+    background-color: rgb(221, 221, 221); 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter_value.selected{
+    background-color: blue;
+    color: white; 
+}
+
+
+.popup_submit_btn{
+    background-color: orange;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
