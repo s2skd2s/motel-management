@@ -46,6 +46,7 @@
     color: blue;
     text-transform: uppercase;
     font-weight: bold;
+
     margin-bottom: 10px;
     height: 40px;
     overflow: hidden;
@@ -141,24 +142,32 @@
     }
 
     .post{
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: 480px;
     }
 
     .post_image_container{
         flex: 2;
     }
+
+    .post_title{
+        margin-top: 10px;
+    }
 }
 
-@media /*(min-width: 576px) and*/ (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
     .container{
         flex-direction: column-reverse;
         /* margin: 20px 0px 20px 0px; */
         
     }
 
+    .post_title{
+        margin-top: 10px;
+    }
+
     .post{
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: 480px;
     }
 
