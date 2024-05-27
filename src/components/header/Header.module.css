@@ -46,9 +46,28 @@
     color: black;
 }
 
+.header_btn.isLoggedIn{
+    display: none;
+}
+
 .header_btn:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+.logout_btn{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.logout_btn.isLoggedIn{
+    display: inline-flex;
 }
 
 .logo{
@@ -57,7 +76,18 @@
     margin-right: 5px;
 }
 
+.user_image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
+.username{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
 
 
 

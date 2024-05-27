@@ -57,6 +57,10 @@
     border-radius: 5px;
     border: none;
     margin-bottom: 30px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
