@@ -1,7 +1,6 @@
 .container{
     display: flex;
     margin: 20px 84px;
-    display: flex;
     column-gap: 20px;
 }
 
@@ -48,13 +47,22 @@
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 10px;
-    height: 42px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
 }
 
 .post_address{
     height: 38px;
     margin-bottom: 10px;
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
 }
 
 .post_description{
@@ -122,4 +130,47 @@
 
 .quick_access:hover{
     text-decoration: underline;
+}
+
+
+@media (max-width: 575px) {
+    .container{
+        flex-direction: column-reverse;
+        margin: 20px 0px 20px 0px;
+        
+    }
+
+    .post{
+        flex-direction: column-reverse;
+        height: 480px;
+    }
+
+    .post_image_container{
+        flex: 2;
+    }
+}
+
+@media /*(min-width: 576px) and*/ (max-width: 768px) {
+    .container{
+        flex-direction: column-reverse;
+        /* margin: 20px 0px 20px 0px; */
+        
+    }
+
+    .post{
+        flex-direction: column-reverse;
+        height: 480px;
+    }
+
+    .post_image_container{
+        flex: 2;
+    }
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {
+    .container{
+        flex-direction: column-reverse;
+      }
 }

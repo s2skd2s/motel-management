@@ -47,3 +47,32 @@
     margin-bottom: 10px;
     font-weight: bold;
 }
+
+
+
+
+@media (max-width: 575px) {
+    .contact_info_container{
+        flex-direction: column;
+    }
+    .ContactSection{
+        margin: 34px 0px 20px 0px;
+        height: auto;
+    }
+
+    .contact_background{
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .ContactSection{
+      margin: 34px 0px 20px 0px;
+    }
+  
+  }
+  
+  /* Tablet and Smaller Desktop */
+  @media (min-width: 768px) and (max-width: 1120px) {
+  
+  }

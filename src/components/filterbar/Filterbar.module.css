@@ -119,3 +119,24 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+
+@media (max-width: 575px) {
+    .filter_container{
+        flex-direction: column;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .filter_container{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+  }
+  
+  /* Tablet and Smaller Desktop */
+  @media (min-width: 768px) and (max-width: 1120px) {
+  
+  }
