@@ -1,68 +1,9 @@
 import styles from './PostListSection.module.css'
+import {fakeData} from '../../constant/fakeData'
+import Link from 'next/link';
 export default function PostListSection(){
 
-    const fakeData = [
-        {
-            "title": "Chính Chủ Cho Thuê Phòng - Đường Nguyễn Xí, Quận Bình Thạnh",
-            "address":"250/1 Phố Nguyễn Xí, Phường 13, Quận Bình Thạnh, Hồ Chí Minh",
-            "desciption":"Nhà trệt. Vị trí: Ngay sau nhà mặt tiền đường Nguyễn Xí, hẻm xe hơi, có camera an ninh, không ngập. Gần chợ, trường học, Vinmart, Coop Food, FamilyMart, Điện máy Nguyễn Kim. Cách Q1 và Sân bay 10 phút đi xe máy, giao thông thuận tiện",
-            "contact": {
-                "name": "Nguyen Van Hang",
-                "phoneNumber": "0123456789"
-            }
 
-        }, 
-        {
-            "title": "Chính Chủ Cho Thuê Phòng - Đường Nguyễn Xí, Quận Bình Thạnh",
-            "address":"250/1 Phố Nguyễn Xí, Phường 13, Quận Bình Thạnh, Hồ Chí Minh",
-            "desciption":"Nhà trệt. Vị trí: Ngay sau nhà mặt tiền đường Nguyễn Xí, hẻm xe hơi, có camera an ninh, không ngập. Gần chợ, trường học, Vinmart, Coop Food, FamilyMart, Điện máy Nguyễn Kim. Cách Q1 và Sân bay 10 phút đi xe máy, giao thông thuận tiện",
-            "contact": {
-                "name": "Nguyen Van Hang",
-                "phoneNumber": "0123456789"
-            }
-
-        }, 
-        {
-            "title": "Chính Chủ Cho Thuê Phòng - Đường Nguyễn Xí, Quận Bình Thạnh",
-            "address":"250/1 Phố Nguyễn Xí, Phường 13, Quận Bình Thạnh, Hồ Chí Minh",
-            "desciption":"Nhà trệt. Vị trí: Ngay sau nhà mặt tiền đường Nguyễn Xí, hẻm xe hơi, có camera an ninh, không ngập. Gần chợ, trường học, Vinmart, Coop Food, FamilyMart, Điện máy Nguyễn Kim. Cách Q1 và Sân bay 10 phút đi xe máy, giao thông thuận tiện",
-            "contact": {
-                "name": "Nguyen Van Hang",
-                "phoneNumber": "0123456789"
-            }
-
-        }, 
-        {
-            "title": "Chính Chủ Cho Thuê Phòng - Đường Nguyễn Xí, Quận Bình Thạnh",
-            "address":"250/1 Phố Nguyễn Xí, Phường 13, Quận Bình Thạnh, Hồ Chí Minh",
-            "desciption":"Nhà trệt. Vị trí: Ngay sau nhà mặt tiền đường Nguyễn Xí, hẻm xe hơi, có camera an ninh, không ngập. Gần chợ, trường học, Vinmart, Coop Food, FamilyMart, Điện máy Nguyễn Kim. Cách Q1 và Sân bay 10 phút đi xe máy, giao thông thuận tiện",
-            "contact": {
-                "name": "Nguyen Van Hang",
-                "phoneNumber": "0123456789"
-            }
-
-        }, 
-        {
-            "title": "Chính Chủ Cho Thuê Phòng - Đường Nguyễn Xí, Quận Bình Thạnh",
-            "address":"250/1 Phố Nguyễn Xí, Phường 13, Quận Bình Thạnh, Hồ Chí Minh",
-            "desciption":"Nhà trệt. Vị trí: Ngay sau nhà mặt tiền đường Nguyễn Xí, hẻm xe hơi, có camera an ninh, không ngập. Gần chợ, trường học, Vinmart, Coop Food, FamilyMart, Điện máy Nguyễn Kim. Cách Q1 và Sân bay 10 phút đi xe máy, giao thông thuận tiện",
-            "contact": {
-                "name": "Nguyen Van Hang",
-                "phoneNumber": "0123456789"
-            }
-
-        }, 
-        {
-            "title": "Chính Chủ Cho Thuê Phòng - Đường Nguyễn Xí, Quận Bình Thạnh",
-            "address":"250/1 Phố Nguyễn Xí, Phường 13, Quận Bình Thạnh, Hồ Chí Minh",
-            "desciption":"Nhà trệt. Vị trí: Ngay sau nhà mặt tiền đường Nguyễn Xí, hẻm xe hơi, có camera an ninh, không ngập. Gần chợ, trường học, Vinmart, Coop Food, FamilyMart, Điện máy Nguyễn Kim. Cách Q1 và Sân bay 10 phút đi xe máy, giao thông thuận tiện",
-            "contact": {
-                "name": "Nguyen Van Hang",
-                "phoneNumber": "0123456789"
-            }
-
-        }
-    ];
 
     const filterPriceValues = [
         'Dưới 1 triệu đồng',
@@ -100,9 +41,13 @@ export default function PostListSection(){
             <div className={styles.post_list_container}>
                 <div className={styles.search_result}>   Tìm thấy {fakeData.length} kết quả</div>
                 {fakeData.map((value) => <div className={styles.post}>
-                                            <div className={styles.post_image_container}></div>
+                                            <Link className={styles.post_image_container}  href={`/Post/${value.id}`}>
+                                                <img className={styles.post_image} src="/images/post/default-room.jpg" alt="" />
+                                            </Link>
                                             <div className={styles.post_details_container}>
-                                                <div className={styles.post_title}>{value.title}</div>
+                                                <Link  className={styles.post_title} href={`/Post/${value.id}`}>
+                                                    {value.title}
+                                                </Link>
                                                 <div className={styles.post_address}>{value.address}</div>
                                                 <div className={styles.post_description}>{value.desciption}</div>
                                                 <div className={styles.post_contact_info}>
